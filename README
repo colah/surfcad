@@ -1,0 +1,8 @@
+surfcad is a surface-oriented CAD library for python.
+
+It differs from other programatic CAD programs like openscad in two ways:
+
+ - Instead of building objects from simple solid primitives via CSG, you build the object from surfaces. Hence, surface-oriented.
+ - It's simply a library for python.
+
+
