@@ -24,7 +24,7 @@ def _v_add(u,v):
 	return (u[0]+v[0],u[1]+v[1],u[2]+v[2])
 
 def srange(S):
-	return map(lambda x: x*S[2], range(int(floor(S[0]/S[2])),int(floor(S[1]/S[2]))+1))
+	return list(map(lambda x: x*S[2], range(int(floor(S[0]/S[2])),int(floor(S[1]/S[2]))+1)))
 
 class STLFile:
 	def __init__(self,fname):
@@ -60,7 +60,7 @@ class STLFile:
 			elif len(i) == 4:
 				self.add_square(i)
 			else:
-				print "unknown primitive received by add"
+				print("unknown primitive received by add")
 
 class loop:
 	def __init__(self,path):
